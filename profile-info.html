@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Transinfo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Style Css-->
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/profile-info.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/profile-info.js"></script>
+    <script src="js/jquery.circle-diagram.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</head>
+<body>
+<!----HEADER--->
+<header>
+    <div class="header-container">
+        <section class="container no-padd home-header-section">
+            <div class="col-md-6 col-sm-12 col-xs-12 home-section-left">
+                <div class="home-header-left-contact">
+                    <span class="home-header-info"><span class="home-info-box"><img src="icons/phone-icon.png"></span> austria@lkw-walter.com</span>
+                    <span class="home-header-info"><span class="home-info-box"><img src="icons/message-icon.png"></span>+435 7777-0</span>
+                </div>
+                <p class="home-header-info">
+                    <span class="home-info-box t-skype"><img src="icons/skype-icon.png"></span>
+                    <span class="home-info-box t-icq"><img src="icons/icq-icon.png"></span>
+                    <span class="home-info-box t-viber"><img src="icons/whatsup-icon.png"></span>
+                    <span class="home-info-box t-whatsapp"><img src="icons/viber-icon.png"></span>
+                </p>
+                <div class="col-md-12 col-sm-4 col-xs-12 home-header-center">
+                    <img class="img-responsive" src="images/logo.png">
+                </div>
+            </div>
+        </section>
+    </div>
+</header>
+<!----HEADER END---->
+
+<!------Content---->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid no-padd home-content-section no-padd clearfix">
+    <div class="col-md-12 no-padd">
+        <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header"><a class="navbar-brand" href="#"></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-menubuilder">
+                    <ul class="nav navbar-nav navbar-left trans-menu-bar">
+                        <li><a href="">Главная</a>
+                        </li>
+                        <li><a href="#"> О нас  </a>
+                        </li>
+                        <li  class="active"><a href="#">Каталог компании </a>
+                        </li>
+                        <li><a href="#">Груз авторынок </a>
+                        </li>
+                        <li><a href="#"> Полезное  </a>
+                        </li>
+                        <li><a href="#">Услуги и цены </a>
+                        </li>
+                        <li><a href="#">  Контакты </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------Content-------------->
+    <div class="container about-sidebar no-padd">
+        <div class="col-md-12 no-padd profile-content register-left-block">
+            <div class="profile-header">
+                <div class="col-md-12 no-padd">
+                    <div id="profile-custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+                        <div class="container-fluid no-padd">
+                            <div class="navbar-header"><a class="navbar-brand" href="#"></a>
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".profile-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse profile-menubuilder">
+                                <ul class="nav navbar-nav navbar-left profile-header-bar col-md-12 no-padd">
+                                    <li class="col-md-4 dash-section-1">
+                                        <span class="dash-title-email"> 077502021@mail.ru </span>
+                                    </li>
+                                    <li class="col-md-2 dash-profile">
+                                       <span class="dash-img">
+                                            <img src="icons/user.png" alt="">
+                                       </span>
+                                        <a class="profile-dash-name">
+                                            Профиль
+                                        </a>
+                                    </li>
+                                    <li class="col-md-2 dash-profile">
+                                       <span class="dash-img">
+                                            <img src="icons/list.png" alt="iocn">
+                                       </span>
+                                        <a class="profile-dash-name">
+                                            Список грузов
+                                        </a>
+                                    </li>
+                                    <li class="col-md-2 dash-profile">
+                                       <span class="dash-img">
+                                            <img src="icons/kamaz.png" alt="iocn">
+                                       </span>
+                                        <a class="profile-dash-name">
+                                            Добавить груз
+                                        </a>
+                                    </li>
+                                    <li class="col-md-2 dash-profile">
+                                        <div class="dash-img">
+                                          <span class="profile-message">
+                                                <img src="icons/envelope.png" alt="iocn">
+                                              <span class="amount-icon">4</span>
+                                          </span>
+                                            <span class="profile-notifications">
+                                                <img src="icons/bell.png" alt="iocn">
+                                                <span class="amount-icon">4</span>
+                                             </span>
+                                            <a href="#" class="logout-button">Выйти</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------Profile Content----->
+            <div class="col-md-12 profile-content clearfix">
+                <div class="col-md-3 profile-info-left-sidebar">
+                    <div class="profile-info-sidebar-img-box">
+                        <img src="icons/profile-logo.png" class="img-responsive">
+                        <h4>UNITAPPS</h4>
+                    </div>
+                </div>
+                <div class="col-md-9 profile-content-main-section">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading profile-info-header" role="tab" id="heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse" aria-expanded="true" aria-controls="collapse" class="">
+                                        ООО "АРАРАТ ТРАНС"
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading" aria-expanded="true" style="">
+                                <div class="panel-body cargo-list-body">
+                                    <div class="col-md-12">
+                                        <div class="col-md-4">
+                                            <img src="images/gruz-logo.jpg" class="img-responsive">
+                                        </div>
+                                        <div class="col-md-4 profile-info-subheader">
+                                            <p class="subheader1">ID ПРЕДПРИЯТИЯ - 65086 </p>
+                                            <p class="subheader2">Мой рейтинг</p>
+                                            <p class="subheader3">Всего 3.50</p>
+                                            <div class="rating-stars">
+                                                <img src="icons/stars.png" alt="" class="img-responsive">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <img src="images/gruz-car.png" class="img-responsive">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <div class="panel-group" id="accordion20" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading profile-info-left-list" role="tab" id="heading20">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion20" href="#collapse20" aria-expanded="true" aria-controls="collapse20">
+                                    <img src="icons/truck.png" alt=""> Разгрузочные дни
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapse20" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading20">
+                            <div class="panel-body cargo-list-body">
+                                <div id="diagram-id-1" class="diagram"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-9 no-padd">
+                    <div class="col-md-3">
+                        <div class="panel-group" id="accordion21" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading profile-info-left-list" role="tab" id="heading21">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion21" href="#collapse21" aria-expanded="true" aria-controls="collapse21">
+                                            <img src="icons/chart-1.png" alt=""> Груз весом
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse21" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading21">
+
+                                        <div class="panel-body cargo-list-body">
+                                            <div id="diagram-id-2" class="diagram"></div>
+                                        </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel-group" id="accordion22" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading profile-info-left-list" role="tab" id="heading22">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion22" href="#collapse22" aria-expanded="true" aria-controls="collapse22">
+                                            <img src="icons/chart-2.png" alt=""> Грузовые дней
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse22" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading22">
+                                    <div class="panel-body cargo-list-body">
+                                        <div id="diagram-id-3" class="diagram"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel-group" id="accordion23" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading profile-info-left-list" role="tab" id="heading23">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion23" href="#collapse23" aria-expanded="true" aria-controls="collapse23">
+                                            <img src="icons/chart-3.png" alt=""> Тип груза
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse23" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading23">
+
+                                    <div class="panel-body cargo-list-body">
+                                        <div id="diagram-id-4" class="diagram"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel-group" id="accordion24" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading profile-info-left-list" role="tab" id="heading24">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion24" href="#collapse24" aria-expanded="true" aria-controls="collapse23">
+                                            <img src="icons/pay.png" alt=""> Оплата
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse24" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading24">
+
+                                    <div class="panel-body cargo-list-body">
+                                        <div id="diagram-id-5" class="diagram"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-12">
+                <div class="col-md-4">
+                    <ul>
+                        <li class="col-md-12">
+                            <div class="col-md-4">Логин</div>
+                            <div class="col-md-4">administrator</div>
+                            <div class="col-md-4">administrator</div>
+                        </li>
+                        <li class="col-md-12">
+                            <div class="col-md-4">Логин</div>
+                            <div class="col-md-4">administrator</div>
+                            <div class="col-md-4">administrator</div>
+                        </li>
+                        <li class="col-md-12">
+                            <div class="col-md-4">Логин</div>
+                            <div class="col-md-4">administrator</div>
+                            <div class="col-md-4">administrator</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+            </div>
+            <!-------Profile Content END----->
+        </div>
+    </div>
+
+    <!-----Footer--->
+    <footer>
+        <div class="container home-footer-box no-padd">
+            <div class="col-md-7 no-padd home-footer-info clearfix">
+                <h3 class="footer-info-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+                <p><i class="fa fa-phone info-first"></i>Тел.: +43 5 7777-0</p>
+                <p><i class="fa fa-print"></i>Факс: +43 5 7777-33 </p>
+                <p><i class="fa fa-envelope"></i>E-Mail: austria@lkw-walter.com</p>
+                <p><i class="fa fa-map-marker"></i>Альтернативные адреса (напр. для внесения в навигационное оборудование)</p>
+            </div>
+            <div class="col-md-5 footer-info-image">
+                <img src="images/map.jpg" class="img-responsive">
+            </div>
+        </div>
+        <div class="container  home-footer-bottom no-padd">
+            <div class="col-md-8 no-padd home-footer-info clearfix">
+                <h4>I Like It. Все права защищены 2015©  </h4>
+            </div>
+            <div class="col-md-4 no-padd home-footer-icons clearfix">
+                <div class="home-footer-icons-section">
+                    <span class="t-facebook"><i class="fa fa-facebook"></i></span>
+                    <span class="t-linkdin"><i class="fa fa-linkedin"></i></span>
+                    <span class="t-tweeter"><i class="fa fa-twitter"></i></span>
+                    <span class="t-gplus"><i class="fa fa-google-plus"></i></span>
+                    <span class="t-youtube"><i class="fa fa-youtube"></i></span>
+                    <span class="t-vk"><i class="fa fa-vk"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------Footer END----->
+
+</body>
+</html>

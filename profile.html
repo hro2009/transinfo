@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Transinfo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Style Css-->
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/jquery-ui.js"></script>
+</head>
+<body>
+<!----HEADER--->
+<header>
+    <div class="header-container">
+        <section class="container no-padd home-header-section">
+            <div class="col-md-6 col-sm-12 col-xs-12 home-section-left">
+                <div class="home-header-left-contact">
+                    <span class="home-header-info"><span class="home-info-box"><img src="icons/phone-icon.png"></span> austria@lkw-walter.com</span>
+                    <span class="home-header-info"><span class="home-info-box"><img src="icons/message-icon.png"></span>+435 7777-0</span>
+                </div>
+                <p class="home-header-info">
+                    <span class="home-info-box t-skype"><img src="icons/skype-icon.png"></span>
+                    <span class="home-info-box t-icq"><img src="icons/icq-icon.png"></span>
+                    <span class="home-info-box t-viber"><img src="icons/whatsup-icon.png"></span>
+                    <span class="home-info-box t-whatsapp"><img src="icons/viber-icon.png"></span>
+                </p>
+                <div class="col-md-12 col-sm-4 col-xs-12 home-header-center">
+                    <img class="img-responsive" src="images/logo.png">
+                </div>
+            </div>
+        </section>
+    </div>
+</header>
+<!----HEADER END---->
+
+<!------Content---->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid no-padd home-content-section no-padd clearfix">
+    <div class="col-md-12 no-padd">
+        <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header"><a class="navbar-brand" href="#"></a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-menubuilder">
+                    <ul class="nav navbar-nav navbar-left trans-menu-bar">
+                        <li><a href="">Главная</a>
+                        </li>
+                        <li><a href="#"> О нас  </a>
+                        </li>
+                        <li  class="active"><a href="#">Каталог компании </a>
+                        </li>
+                        <li><a href="#">Груз авторынок </a>
+                        </li>
+                        <li><a href="#"> Полезное  </a>
+                        </li>
+                        <li><a href="#">Услуги и цены </a>
+                        </li>
+                        <li><a href="#">  Контакты </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------Content-------------->
+    <div class="container about-sidebar no-padd">
+        <div class="col-md-12 no-padd profile-content register-left-block">
+            <div class="profile-header">
+                <div class="col-md-12 no-padd">
+                    <div id="profile-custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+                        <div class="container-fluid no-padd">
+                            <div class="navbar-header"><a class="navbar-brand" href="#"></a>
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".profile-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse profile-menubuilder">
+                                <ul class="nav navbar-nav navbar-left profile-header-bar col-md-12 no-padd">
+                                    <li class="col-md-4 dash-section-1">
+                                      <span class="dash-title-email"> 077502021@mail.ru </span>
+                                    </li>
+                                    <li class="col-md-2 dash-profile">
+                                       <span class="dash-img">
+                                            <img src="icons/user.png" alt="">
+                                       </span>
+                                        <a class="profile-dash-name">
+                                            Профиль
+                                        </a>
+                                    </li>
+                                    <li class="col-md-2 dash-profile">
+                                       <span class="dash-img">
+                                            <img src="icons/list.png" alt="iocn">
+                                       </span>
+                                        <a class="profile-dash-name">
+                                           Список грузов
+                                        </a>
+                                    </li>
+                                    <li class="col-md-2 dash-profile">
+                                       <span class="dash-img">
+                                            <img src="icons/kamaz.png" alt="iocn">
+                                       </span>
+                                        <a class="profile-dash-name">
+                                           Добавить груз
+                                        </a>
+                                    </li>
+                                    <li class="col-md-2 dash-profile">
+                                      <div class="dash-img">
+                                          <span class="profile-message">
+                                                <img src="icons/envelope.png" alt="iocn">
+                                              <span class="amount-icon">4</span>
+                                          </span>
+                                            <span class="profile-notifications">
+                                                <img src="icons/bell.png" alt="iocn">
+                                                <span class="amount-icon">4</span>
+                                             </span>
+                                          <a href="#" class="logout-button">Выйти</a>
+                                      </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-------Profile Content----->
+            <div class="col-md-12 profile-content clearfix">
+                <div class="col-md-3 profile-left-sidebar">
+                    <h4 class="profile-initials">ООО "АРАРАТ ТРАНС"</h4>
+                    <h5 class="profile-initials">ID ПРЕДПРИЯТИЯ -  65086 </h5>
+                    <div class="profile-sidebar-img-box">
+                            <img src="icons/profile-logo.png" class="img-responsive">
+                        <h4>UNITAPPS</h4>
+                    </div>
+                    <div class="profile-rate">
+                        <h4 class="rate-info"> Мой рейтинг</h4>
+                        <p class="rate-info">Всего 3.50</p>
+                        <div class="rate-progress">
+                            <div class="progress rate-progress-line">
+                                <div class="progress-bar rate-progres-color" style="width: 94%;height:20px;">
+                                    <span class="progress-bar-percantage">94%</span>
+                                    <span class="progress-bar-text">Тип груза</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rate-progress">
+                        <div class="progress rate-progress-line">
+                            <div class="progress-bar rate-progres-color" style="width: 15%;height:20px;">
+                                <span class="progress-bar-percantage">15%</span>
+                                <span class="progress-bar-text">Грузовые дней</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rate-progress">
+                        <div class="progress rate-progress-line">
+                            <div class="progress-bar rate-progres-color" style="width: 30%;height:20px;">
+                                <span class="progress-bar-percantage">30%</span>
+                                <span class="progress-bar-text">Груз весом</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rate-progress">
+                        <div class="progress rate-progress-line">
+                            <div class="progress-bar rate-progres-color" style="width: 45%;height:20px;">
+                                <span class="progress-bar-percantage">45%</span>
+                                <span class="progress-bar-text">Разгрузочные дни</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rate-progress">
+                        <div class="progress rate-progress-line">
+                            <div class="progress-bar rate-progres-color" style="width: 83%;height:20px;">
+                                <span class="progress-bar-percantage">83%</span>
+                                <span class="progress-bar-text">Оплата</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 profile-content-main-section">
+                    <div class="col-md-12 forms-request">
+                        <div class="col-md-12 profile-section-header">
+
+                            <h4>ДОБАВИТЬ ГРУЗ</h4>
+                        </div>
+                    </div>
+                    <!------------FORM----------->
+                    <div class="col-md-12 forms-request">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <!-- Form Name -->
+                                    <legend class="profile-form-title"><span> <img src="icons/kalos.png" alt=""></span>
+                                        Добавить груз
+                                    </legend>
+                                    <!-- Form Name -->
+                                    <div class="col-md-12 form-blocks no-padd">
+                                        <!-- Appended checkbox -->
+                                        <div class="col-md-12 no-padd">
+                                            <h5 class="profile-fields-titles">
+                                                <span class="forms-titles">
+                                                <img src="icons/data.png"  alt=""></span>
+                                                Дата
+                                            </h5>
+                                            <div class="col-md-6 no-padd form-content-sections">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <input type='text' class="form-control" id='datetimepicker4' placeholder="От "/>
+                                                        <span class="input-group-addon">
+                                                             <i class="fa fa-calendar"></i>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 no-padd form-content-sections">
+                                                <div class="col-md-12">
+                                                    <div class="input-group">
+                                                        <input type='text' class="form-control" id='datetimepicker5' placeholder="До  " />
+                                                    <span class="input-group-addon">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-12 form-section-1 no-padd">
+                                            <h5 class="profile-fields-titles">
+                                                   <span class="forms-titles">
+                                                    <img src="icons/refresh.png"  alt="">
+                                                   </span>
+                                                Место загрузки*
+                                            </h5>
+                                            <div class="col-md-4 no-padd form-content-sections">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 no-padd input-group">
+                                                        <div class="col-md-12 col-sm-12 col-xs-12 no-padd selectBox">
+                                                            <input type="hidden" value="value 1" class="price_values">
+                                                            <span class="col-md-12 no-padd selected select-designed">Выбрать *</span>
+                                                             <span class="input-group-addon selectArrow">
+                                                                     <i class="fa fa-sort-desc"></i>
+                                                             </span>
+                                                            <ul class="selectOptions" style="display: none;">
+                                                                <li class="selectOption" data-value="value 1">Страна *</li>
+                                                                <li class="selectOption" data-value="value 2">Option 2</li>
+                                                                <li class="selectOption" data-value="value 3">Option 3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Appended checkbox -->
+                                            <div class="col-md-4 no-padd form-content-sections">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 no-padd input-group">
+                                                        <div class="col-md-12 col-sm-12 col-xs-12 no-padd selectBox">
+                                                            <input type="hidden" value="value 1" class="price_values">
+                                                            <span class="col-md-12 no-padd selected select-designed">Регион * </span>
+                                                             <span class="input-group-addon selectArrow">
+                                                                     <i class="fa fa-sort-desc"></i>
+                                                             </span>
+                                                                <ul class="selectOptions" style="display: none;">
+                                                                <li class="selectOption" data-value="value 1">Город * </li>
+                                                                <li class="selectOption" data-value="value 2">Option 2</li>
+                                                                <li class="selectOption" data-value="value 3">Option 3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 no-padd form-content-sections">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 no-padd input-group">
+                                                        <div class="col-md-12 col-sm-12 col-xs-12 no-padd selectBox">
+                                                            <input type="hidden" value="value 1" class="price_values">
+                                                            <span class="col-md-12 no-padd selected select-designed">Город *</span>
+                                                             <span class="input-group-addon selectArrow">
+                                                                     <i class="fa fa-sort-desc"></i>
+                                                             </span>
+                                                            <ul class="selectOptions" style="display: none;">
+                                                                <li class="selectOption" data-value="value 1">Город *</li>
+                                                                <li class="selectOption" data-value="value 2">Option 2</li>
+                                                                <li class="selectOption" data-value="value 3">Option 3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h5 class="profile-fields-titles">
+                                                   <span class="forms-titles">
+                                                    <img src="icons/upload.png"  alt="">
+                                                   </span>
+                                                Место выгрузки
+                                            </h5>
+                                            <div class="col-md-4 no-padd form-content-sections">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 no-padd input-group">
+                                                        <div class="col-md-12 col-sm-12 col-xs-12 no-padd selectBox">
+                                                            <input type="hidden" value="value 1" class="price_values">
+                                                            <span class="col-md-12 no-padd selected select-designed">Страна *</span>
+                                                             <span class="input-group-addon selectArrow">
+                                                                     <i class="fa fa-sort-desc"></i>
+                                                             </span>
+                                                            <ul class="selectOptions" style="display: none;">
+                                                                <li class="selectOption" data-value="value 1">Страна *</li>
+                                                                <li class="selectOption" data-value="value 2">Option 2</li>
+                                                                <li class="selectOption" data-value="value 3">Option 3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 no-padd form-content-sections">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 no-padd input-group">
+                                                        <div class="col-md-12 col-sm-12 col-xs-12 no-padd selectBox">
+                                                            <input type="hidden" value="value 1" class="price_values">
+                                                            <span class="col-md-12 no-padd selected select-designed">Регион *</span>
+                                                             <span class="input-group-addon selectArrow">
+                                                                     <i class="fa fa-sort-desc"></i>
+                                                             </span>
+                                                            <ul class="selectOptions" style="display: none;">
+                                                                <li class="selectOption" data-value="value 1">Регион *</li>
+                                                                <li class="selectOption" data-value="value 2">Option 2</li>
+                                                                <li class="selectOption" data-value="value 3">Option 3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 no-padd form-content-sections">
+                                                <div class="col-md-12">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 no-padd input-group">
+                                                        <div class="col-md-12 col-sm-12 col-xs-12 no-padd selectBox">
+                                                            <input type="hidden" value="value 1" class="price_values">
+                                                            <span class="col-md-12 no-padd selected select-designed">Город *</span>
+                                                             <span class="input-group-addon selectArrow">
+                                                                     <i class="fa fa-sort-desc"></i>
+                                                             </span>
+                                                            <ul class="selectOptions" style="display: none;">
+                                                                <li class="selectOption" data-value="value 1">Город * </li>
+                                                                <li class="selectOption" data-value="value 2">Option 2</li>
+                                                                <li class="selectOption" data-value="value 3">Option 3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" type="text" placeholder="15км">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    <!------------FORM END----------->
+
+
+                    <!------------FORM 2----------->
+                    <div class="col-md-12 forms-request form-content-2">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <!-- Form Name -->
+                                <legend class="profile-form-title"><span> <img src="icons/gruz.png" alt=""></span>
+                                    Груз
+                                </legend>
+                                <!-- Form Name -->
+                                <div class="col-md-12 form-blocks no-padd">
+                                    <!-- Appended checkbox -->
+                                    <div class="col-md-12 no-padd">
+                                        <h5 class="profile-fields-titles">
+                                            <span class="forms-titles">
+                                                <img src="icons/user-icon.png"  alt="">
+                                           </span>Наименование *
+                                        </h5>
+                                        <div class="col-md-4 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="input-group dem-width">
+                                                    <input type='text' class="form-control" id='datetimepicker4' placeholder="От "/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 no-padd input-group">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 no-padd selectBox">
+                                                        <input type="hidden" value="value 1" class="price_values">
+                                                        <span class="col-md-12 no-padd selected select-designed">ADR</span>
+                                                             <span class="input-group-addon selectArrow">
+                                                                 <i class="fa fa-sort-desc"></i>
+                                                             </span>
+                                                        <ul class="selectOptions" style="display: none;">
+                                                            <li class="selectOption" data-value="value 1">ADR</li>
+                                                            <li class="selectOption" data-value="value 2">Option 2</li>
+                                                            <li class="selectOption" data-value="value 3">Option 3</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 form-section-1 no-padd">
+                                        <h5 class="profile-fields-titles">
+                                           <span class="forms-titles">
+                                                <img src="icons/dimenssion.png"  alt="">
+                                           </span>Габариты груза
+                                        </h5>
+                                        <div class="col-md-4 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="input-group dem-width">
+                                                    <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" type="text" placeholder="Длина * ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Appended checkbox -->
+                                        <div class="col-md-4 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="input-group dem-width">
+                                                    <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" type="text" placeholder="Ширина *">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 no-padd form-content-sections">
+                                            <div class="col-md-9">
+                                                <div class="input-group dem-width">
+                                                    <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" type="text" placeholder="Высота *">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <span class="demenssion-iocn">
+                                                    м
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <h5 class="profile-fields-titles">
+                                           <span class="forms-titles">
+                                                <img src="icons/massa.png"  alt="">
+                                           </span>
+                                            Масса*
+                                        </h5>
+                                        <div class="col-md-4 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="input-group dem-width">
+                                                    <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" type="text" placeholder=" ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="input-group dem-width">
+                                                    <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" type="text" placeholder=" ">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="input-group dem-width weight-content">
+                                                    <div class="weight-type">Т</div>
+                                                    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                                    <div id="slider-range-max"></div>
+                                                    <div id="slider-range-min">001</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h5 class="profile-fields-titles">
+                                           <span class="forms-titles">
+                                                <img src="icons/massa.png"  alt="">
+                                           </span>
+                                            Масса*
+                                        </h5>
+                                        <div class="col-md-4 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="input-group dem-width">
+                                                    <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" type="text" placeholder=" ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="input-group dem-width">
+                                                    <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" type="text" placeholder=" ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="input-group dem-width weight-content-1">
+                                                    <div class="weight-type">М<sup>3</sup></div>
+                                                    <input type="text" id="amount-1" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                                    <div id="slider-range-max-1"></div>
+                                                    <div id="slider-range-min-1">001</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!------------FORM-2 END----------->
+
+
+                    <!------------FORM-3----------->
+                    <div class="col-md-12 forms-request">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <!-- Form Name -->
+                                <legend class="profile-form-title">
+                                    <span> <img src="icons/transport.png" alt=""></span>
+                                    Транспорт
+                                </legend>
+                                <!-- Form Name -->
+                                <div class="col-md-12 form-blocks no-padd">
+                                    <!-- Appended checkbox -->
+                                    <div class="col-md-12 no-padd">
+                                        <h5 class="profile-fields-titles">
+                                                <span class="forms-titles">
+                                                <img src="icons/moving-truck.png"  alt=""></span>
+                                            Тип кузова *
+                                        </h5>
+                                        <div class="col-md-6 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 no-padd input-group">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 no-padd selectBox">
+                                                        <input type="hidden" value="value 1" class="price_values">
+                                                        <span class="col-md-12 no-padd selected select-designed">Страна *</span>
+                                                         <span class="input-group-addon selectArrow">
+                                                                 <i class="fa fa-sort-desc"></i>
+                                                         </span>
+                                                        <ul class="selectOptions" style="display: none;">
+                                                            <li class="selectOption" data-value="value 1">Страна *</li>
+                                                            <li class="selectOption" data-value="value 2">Option 2</li>
+                                                            <li class="selectOption" data-value="value 3">Option 3</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-12 form-section-1 no-padd">
+                                        <h5 class="profile-fields-titles">
+                                                   <span class="forms-titles">
+                                                    <img src="icons/load-icon.png"  alt="">
+                                                   </span>
+                                            Загрузка *
+                                        </h5>
+                                        <div class="col-md-10 no-padd form-content-sections">
+                                            <div class="col-md-12 no-padd">
+                                                <div class=" col-md-4">
+                                                    <input type="checkbox" name="checkboxG4" id="checkboxG1" class="css-checkbox">
+                                                    <label for="checkboxG1" class="css-label">Верхняя</label>
+                                                </div>
+                                                <div class="squaredThree col-md-4">
+                                                    <input type="checkbox" name="checkboxG4" id="checkboxG2" class="css-checkbox">
+                                                    <label for="checkboxG2" class="css-label">Задняя</label>
+                                                </div>
+                                                <div class="squaredThree col-md-4">
+                                                    <input type="checkbox" name="checkboxG4" id="checkboxG3" class="css-checkbox">
+                                                    <label for="checkboxG3" class="css-label">Со снятием стоек</label>
+                                                </div>
+                                                <div class="col-md-12 transport-checkform-2 no-padd">
+                                                    <div class=" col-md-4">
+                                                        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox">
+                                                        <label for="checkboxG4" class="css-label">Верхняя</label>
+                                                    </div>
+                                                    <div class="squaredThree col-md-4">
+                                                        <input type="checkbox" name="checkboxG4" id="checkboxG5" class="css-checkbox">
+                                                        <label for="checkboxG5" class="css-label">Задняя</label>
+                                                    </div>
+                                                    <div class="squaredThree col-md-4">
+                                                        <input type="checkbox" name="checkboxG4" id="checkboxG6" class="css-checkbox">
+                                                        <label for="checkboxG6" class="css-label">Со снятием стоек</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!------Transport 2------->
+                                        <h5 class="profile-fields-titles">
+                                                   <span class="forms-titles">
+                                                    <img src="icons/options.png"  alt="">
+                                                   </span>
+                                            Разрешения *
+                                        </h5>
+                                        <div class="col-md-10 no-padd form-content-sections">
+                                            <div class="col-md-12 no-padd">
+                                                <div class=" col-md-4">
+                                                    <input type="checkbox" name="checkboxG4" id="checkboxG7" class="css-checkbox">
+                                                    <label for="checkboxG7" class="css-label">CMR</label>
+                                                </div>
+                                                <div class="squaredThree col-md-4">
+                                                    <input type="checkbox" name="checkboxG4" id="checkboxG8" class="css-checkbox">
+                                                    <label for="checkboxG8" class="css-label">ЕКМТ</label>
+                                                </div>
+                                                <div class="squaredThree col-md-4">
+                                                    <input type="checkbox" name="checkboxG4" id="checkboxG9" class="css-checkbox">
+                                                    <label for="checkboxG9" class="css-label">TIR</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!------Transport 2 END------->
+
+                                        <!------Transport 3------->
+                                        <h5 class="profile-fields-titles">
+                                                   <span class="forms-titles">
+                                                    <img src="icons/truck-count.png"  alt="">
+                                                   </span>
+                                            Число грузовиков *
+                                        </h5>
+                                        <div class="col-md-12 no-padd form-content-sections">
+                                            <div class="col-md-6 no-padd form-content-sections">
+                                                <div class="col-md-12">
+                                                    <div class="input-group dem-width">
+                                                        <input id="appendedcheckbox" name="appendedcheckbox" class="form-control" type="number" placeholder=" ">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!------Transport 3 END------->
+                                    </div>
+
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!------------FORM-3 END----------->
+
+
+                    <!-------FORM 4 ------------------->
+
+                    <div class="col-md-12 forms-request">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <!-- Form Name -->
+                                <legend class="profile-form-title"><span> <img src="icons/kalos.png" alt=""></span>
+                                    Оплата
+                                </legend>
+                                <!-- Form Name -->
+                                <div class="col-md-12 form-blocks no-padd">
+                                    <!-- Appended checkbox -->
+                                    <div class="col-md-12 no-padd">
+                                        <h5 class="profile-fields-titles">
+                                                <span class="forms-titles">
+                                                <img src="icons/pay-form.png"  alt=""></span>
+                                            Форма оплаты *
+                                        </h5>
+                                        <div class="col-md-6 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="col-md-12 col-sm-12 col-xs-12 no-padd input-group">
+                                                    <div class="col-md-12 col-sm-12 col-xs-12 no-padd selectBox">
+                                                        <input type="hidden" value="value 1" class="price_values">
+                                                        <span class="col-md-12 no-padd selected select-designed">----------Выбрать----------</span>
+                                                         <span class="input-group-addon selectArrow">
+                                                                 <i class="fa fa-sort-desc"></i>
+                                                         </span>
+                                                        <ul class="selectOptions" style="display: none;">
+                                                            <li class="selectOption" data-value="value 1">----------Выбрать----------</li>
+                                                            <li class="selectOption" data-value="value 2">Option 2</li>
+                                                            <li class="selectOption" data-value="value 3">Option 3</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 no-padd form-content-sections">
+                                            <div class="col-md-12">
+                                                <div class="input-group">
+                                                    <input type='text' class="form-control" id='datetimepicker5' placeholder="До  " />
+                                                  <span class="input-group-addon">
+                                                      <i class="fa fa-percent">%</i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 no-padd form-content-sections">
+                                        <h5 class="profile-fields-titles">
+                                                <span class="forms-titles">
+                                                <img src="icons/pay-form.png"  alt=""></span>
+                                            Форма оплаты *
+                                        </h5>
+                                        <div class="col-md-12 comment-form">
+                                            <textarea name="" id="" cols="30" rows="10">
+
+
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-------FORM 4 END------------------->
+
+                </div>
+            </div>
+            <!-------Profile Content END----->
+        </div>
+    </div>
+
+    <!-----Footer--->
+    <footer>
+        <div class="container home-footer-box no-padd">
+            <div class="col-md-7 no-padd home-footer-info clearfix">
+                <h3 class="footer-info-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h3>
+                <p><i class="fa fa-phone info-first"></i>Тел.: +43 5 7777-0</p>
+                <p><i class="fa fa-print"></i>Факс: +43 5 7777-33 </p>
+                <p><i class="fa fa-envelope"></i>E-Mail: austria@lkw-walter.com</p>
+                <p><i class="fa fa-map-marker"></i>Альтернативные адреса (напр. для внесения в навигационное оборудование)</p>
+            </div>
+            <div class="col-md-5 footer-info-image">
+                <img src="images/map.jpg" class="img-responsive">
+            </div>
+        </div>
+        <div class="container  home-footer-bottom no-padd">
+            <div class="col-md-8 no-padd home-footer-info clearfix">
+                <h4>I Like It. Все права защищены 2015©  </h4>
+            </div>
+            <div class="col-md-4 no-padd home-footer-icons clearfix">
+                <div class="home-footer-icons-section">
+                    <span class="t-facebook"><i class="fa fa-facebook"></i></span>
+                    <span class="t-linkdin"><i class="fa fa-linkedin"></i></span>
+                    <span class="t-tweeter"><i class="fa fa-twitter"></i></span>
+                    <span class="t-gplus"><i class="fa fa-google-plus"></i></span>
+                    <span class="t-youtube"><i class="fa fa-youtube"></i></span>
+                    <span class="t-vk"><i class="fa fa-vk"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-------Footer END----->
+
+</body>
+</html>
